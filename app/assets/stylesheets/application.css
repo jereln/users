@@ -11,3 +11,53 @@
  *= require_self
  *= require_tree .
  */
+
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 5px;
+}
+
+.table_border{
+  padding: 1px 20px;
+  border: 1px solid black;
+}
+
+.headers {
+  background-color: lightblue;
+
+}
+
+.blank {
+  background-color: white !important;
+}
+
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)		{ background-color:#fff; }
+
+th .asc:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+th .desc:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #333;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+}
